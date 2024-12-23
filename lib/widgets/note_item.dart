@@ -14,7 +14,7 @@ class NoteItem extends StatelessWidget {
           Navigator.push(context, MaterialPageRoute(builder: (context)=>const EditNoteView()));
         },
         child: Container(
-          padding: EdgeInsets.only(top: 24,bottom: 24,left: 16,),
+          padding:const EdgeInsets.only(top: 24,bottom: 24,left: 16,),
           decoration: BoxDecoration(
             color: Colors.purple.withOpacity(0.2),
             borderRadius: BorderRadius.circular(20),
