@@ -23,7 +23,7 @@ class CustomText extends StatelessWidget {
           fontWeight: fontWeight,
           fontSize: fontSize,
           color: color,
-          fontFamily: 'SignikaNegative'),
+          fontFamily: 'Lato'),
     );
   }
 }
