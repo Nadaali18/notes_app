@@ -13,7 +13,7 @@ final IconData icon;
         borderRadius: BorderRadius.circular(18),
       ),
       child: Center(
-        child: Icon(icon,size: 28,),
+        child: IconButton(onPressed: (){},icon:Icon(icon,size: 28,)),
       ),
     );
   }
