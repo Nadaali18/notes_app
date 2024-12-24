@@ -23,7 +23,7 @@ void initState() {
   Widget build(BuildContext context) {
     return const Column(
       children: [
-        SizedBox(height: 30,),
+        SizedBox(height: 50,),
         CustomAppBar(title: 'Notes',icon: Icons.search,),
         Expanded(
           child: NotesListView()

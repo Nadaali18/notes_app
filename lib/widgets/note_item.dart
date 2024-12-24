@@ -17,7 +17,7 @@ final NoteModel note;
         child: Container(
           padding:const EdgeInsets.only(top: 24,bottom: 24,left: 16,),
           decoration: BoxDecoration(
-            color: Colors.purple.withOpacity(0.2),
+            color: Color(note.color).withOpacity(0.2),
             borderRadius: BorderRadius.circular(20),
           ),
           child: Column(
@@ -29,7 +29,11 @@ final NoteModel note;
                   padding: const EdgeInsets.only(top: 15),
                   child: CustomText(note.subTitle,fontSize: 18,color: Colors.white.withOpacity(0.5),),
                 ),
-                trailing: IconButton(onPressed: (){}, icon: const Icon(Icons.delete,size: 26,)),
+                trailing: IconButton(
+                  onPressed: (){
+                   note.delete();
+                  },
+                  icon: const Icon(Icons.delete,size: 26,)),
               ),
               Padding(
                 padding: const EdgeInsets.only(top : 15,right: 24),
